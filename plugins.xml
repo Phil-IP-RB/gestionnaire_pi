@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugins>
+  <pyqgis_plugin name="gestionnaire_pi-1.0.0" version="1.0.0">
+    <description><![CDATA[Gestionnaire P.I (Version d’essai) : création de lots et génération d’annexes.]]></description>
+    <qgis_minimum_version>3.34</qgis_minimum_version>
+    <qgis_maximum_version>3.99</qgis_maximum_version>
+    <download_url>https://raw.githubusercontent.com/Phil-IP-RB/gestionnaire_pi/main/gestionnaire_pi-1.0.0.zip</download_url>
+    <author_name>Xavier</author_name>
+    <email>xavier.garachon@externe.grdf.fr</email>
+    <homepage>https://github.com/Phil-IP-RB/gestionnaire_pi</homepage>
+    <repository>https://github.com/Phil-IP-RB/gestionnaire_pi</repository>
+    <experimental>true</experimental>
+  </pyqgis_plugin>
+</plugins>
