@@ -1,6 +1,0 @@
-<RCC>
-    <qresource prefix="/plugins/gestionnaire_pi">
-        <file>icon.svg</file>
-		<file>icon.png</file>
-    </qresource>
-</RCC>
