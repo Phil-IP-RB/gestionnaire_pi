@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GestionnairePiDockWidgetBase</class>
+ <widget class="QDockWidget" name="GestionnairePiDockWidgetBase">
+  <property name="windowTitle">
+   <string>Gestionnaire PI</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <!-- Page : Menu Principal -->
+      <widget class="QWidget" name="page_main_menu">
+       <layout class="QVBoxLayout" name="mainMenuLayout">
+        <item>
+         <widget class="QWidget" name="buttonContainer">
+          <layout class="QVBoxLayout" name="buttonLayout">
+           <item>
+            <widget class="QPushButton" name="btn_creation_lot">
+             <property name="text">
+              <string>Création lot P.I</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_annexe6">
+             <property name="text">
+              <string>Génération Annexe_6</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_parametres">
+             <property name="text">
+              <string>Paramètres</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="mainMenuSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <!-- Page : Création lot P.I -->
+		<widget class="QWidget" name="page_creation_lot">
+		 <layout class="QVBoxLayout" name="creationLotLayout">
+		  <item>
+		   <widget class="QLabel">
+			<property name="text">
+			 <string>INSEE :</string>
+			</property>
+		   </widget>
+		  </item>
+		  <item>
+		   <widget class="QLineEdit" name="line_insee"/>
+		  </item>
+		  <item>
+		   <widget class="QLabel">
+			<property name="text">
+			 <string>Emprises :</string>
+			</property>
+		   </widget>
+		  </item>
+		  <item>
+		   <widget class="QComboBox" name="combo_emprises"/>
+		  </item>
+		  <item>
+		   <widget class="QLabel">
+			<property name="text">
+			 <string>Linéaires :</string>
+			</property>
+		   </widget>
+		  </item>
+		  <item>
+		   <layout class="QHBoxLayout">
+			<item>
+			 <widget class="QLineEdit" name="line_selected_layers">
+			  <property name="readOnly">
+			   <bool>true</bool>
+			  </property>
+			 </widget>
+			</item>
+			<item>
+			 <widget class="QPushButton" name="btn_select_line_layers">
+			  <property name="text">
+			   <string>...</string>
+			  </property>
+			  <property name="maximumSize">
+			   <size>
+				<width>24</width>
+				<height>24</height>
+			   </size>
+			  </property>
+			 </widget>
+			</item>
+		   </layout>
+		  </item>
+		  <item>
+		   <widget class="QLabel">
+			<property name="text">
+			 <string>Linéaires ME :</string>
+			</property>
+		   </widget>
+		  </item>
+		  <item>
+		   <widget class="QComboBox" name="combo_lineaires_me"/>
+		  </item>
+		  <item>
+		   <widget class="QCheckBox" name="inclure_classe_b">
+			<property name="text">
+			 <string>Inclure classe B</string>
+			</property>
+		   </widget>
+		  </item>
+		  <item>
+		   <widget class="QLabel">
+			<property name="text">
+			 <string>Géoréférencement :</string>
+			</property>
+		   </widget>
+		  </item>
+		  <item>
+		   <widget class="QComboBox" name="combo_georef"/>
+		  </item>
+		  <item>
+		   <widget class="QLabel">
+			<property name="text">
+			 <string>Dossier de sortie :</string>
+			</property>
+		   </widget>
+		  </item>
+		  <item>
+		   <layout class="QHBoxLayout">
+			<item>
+			 <widget class="QLineEdit" name="line_output"/>
+			</item>
+			<item>
+			 <widget class="QPushButton" name="btn_browse_output">
+			  <property name="text">
+			   <string>Parcourir</string>
+			  </property>
+			 </widget>
+			</item>
+		   </layout>
+		  </item>
+		  <item>
+		   <widget class="QLabel">
+			<property name="text">
+			 <string>Dossier styles :</string>
+			</property>
+		   </widget>
+		  </item>
+		  <item>
+		   <layout class="QHBoxLayout">
+			<item>
+			 <widget class="QLineEdit" name="line_styles"/>
+			</item>
+			<item>
+			 <widget class="QPushButton" name="btn_browse_styles">
+			  <property name="text">
+			   <string>Parcourir</string>
+			  </property>
+			 </widget>
+			</item>
+		   </layout>
+		  </item>
+		  <item>
+		   <layout class="QHBoxLayout" name="btnRowCreationLot">
+			<item>
+			 <widget class="QPushButton" name="btn_lancer_creation_lot">
+			  <property name="text">
+			   <string>Lancer</string>
+			  </property>
+			 </widget>
+			</item>
+			<item>
+			 <widget class="QPushButton" name="btn_retour_creation_lot">
+			  <property name="text">
+			   <string>Retour</string>
+			  </property>
+			 </widget>
+			</item>
+		   </layout>
+		  </item>
+		  <item>
+		   <spacer name="verticalSpacer">
+			<property name="orientation">
+			 <enum>Qt::Vertical</enum>
+			</property>
+			<property name="sizeHint" stdset="0">
+			 <size>
+			  <width>20</width>
+			  <height>40</height>
+			 </size>
+			</property>
+		   </spacer>
+		  </item>
+		 </layout>
+		</widget>
+      <!-- Page : Annexe 6 -->
+		<widget class="QWidget" name="page_annexe6">
+		 <layout class="QVBoxLayout" name="annexe6Layout">
+		  <item>
+		   <widget class="QLabel">
+			<property name="text">
+			 <string>Lineaires :</string>
+			</property>
+		   </widget>
+		  </item>
+		  <item>
+		   <widget class="QComboBox" name="combo_troncons"/>
+		  </item>
+		  <item>
+		   <widget class="QLabel">
+			<property name="text">
+			 <string>Zones de détection :</string>
+			</property>
+		   </widget>
+		  </item>
+		  <item>
+		   <widget class="QComboBox" name="combo_zones"/>
+		  </item>
+		  <item>
+		   <widget class="QLabel">
+			<property name="text">
+			 <string>Emprises :</string>
+			</property>
+		   </widget>
+		  </item>
+		  <item>
+		   <widget class="QComboBox" name="combo_folios"/>
+		  </item>
+		  <item>
+		   <widget class="QLabel">
+			<property name="text">
+			 <string>Dossier de sortie :</string>
+			</property>
+		   </widget>
+		  </item>
+		  <item>
+		   <widget class="QLineEdit" name="line_output_folder"/>
+		  </item>
+		  <item>
+		   <widget class="QPushButton" name="btn_browse_folder">
+			<property name="text">
+			 <string>Parcourir</string>
+			</property>
+		   </widget>
+		  </item>
+		  <item>
+		   <layout class="QHBoxLayout">
+			<item>
+			 <widget class="QPushButton" name="btn_annexe6_lancer">
+			  <property name="text">
+			   <string>Lancer</string>
+			  </property>
+			 </widget>
+			</item>
+			<item>
+			 <widget class="QPushButton" name="btn_annexe6_retour">
+			  <property name="text">
+			   <string>Retour</string>
+			  </property>
+			 </widget>
+			</item>
+		   </layout>
+		  </item>
+		  <!-- Spacer -->
+		  <item>
+		   <spacer name="mainMenuSpacer">
+			<property name="orientation">
+			 <enum>Qt::Vertical</enum>
+			</property>
+			<property name="sizeHint" stdset="0">
+			 <size>
+			  <width>20</width>
+			  <height>40</height>
+			 </size>
+			</property>
+		   </spacer>
+		  </item>
+		 </layout>
+		</widget>
+        <!-- Page : Paramètres -->
+		<widget class="QWidget" name="page_parametres">
+		 <layout class="QVBoxLayout" name="parametresLayout">
+
+		  <!-- Apparence -->
+		  <item>
+		   <widget class="QLabel">
+			<property name="text">
+			 <string>Thème :</string>
+			</property>
+		   </widget>
+		  </item>
+		  <item>
+		   <widget class="QComboBox" name="combo_theme">
+			<item>
+			 <property name="text">
+			  <string>Thème clair</string>
+			 </property>
+			</item>
+			<item>
+			 <property name="text">
+			  <string>Thème sombre</string>
+			 </property>
+			</item>
+		   </widget>
+		  </item>
+		  <item>
+		   <widget class="QPushButton" name="btn_choose_color">
+			<property name="text">
+			 <string>Choisir une couleur</string>
+			</property>
+		   </widget>
+		  </item>
+
+		  <!-- Dossiers -->
+		  <item>
+		   <widget class="QLabel">
+			<property name="text">
+			 <string>Dossier de sortie par défaut :</string>
+			</property>
+		   </widget>
+		  </item>
+		  <item>
+		   <widget class="QLineEdit" name="line_default_output"/>
+		  </item>
+		  <item>
+		   <widget class="QPushButton" name="btn_browse_default_output">
+			<property name="text">
+			 <string>Parcourir</string>
+			</property>
+		   </widget>
+		  </item>
+
+		  <item>
+		   <widget class="QLabel">
+			<property name="text">
+			 <string>Dossier style par défaut :</string>
+			</property>
+		   </widget>
+		  </item>
+		  <item>
+		   <widget class="QLineEdit" name="line_default_styles"/>
+		  </item>
+		  <item>
+		   <widget class="QPushButton" name="btn_browse_default_styles">
+			<property name="text">
+			 <string>Parcourir</string>
+			</property>
+		   </widget>
+		  </item>
+
+		  <!-- Autres options -->
+		  <item>
+		   <widget class="QCheckBox" name="check_logs">
+			<property name="text">
+			 <string>Afficher les logs détaillés</string>
+			</property>
+		   </widget>
+		  </item>
+
+		  <!-- Actions -->
+		  <item>
+		   <widget class="QPushButton" name="btn_save_settings">
+			<property name="text">
+			 <string>Enregistrer les paramètres</string>
+			</property>
+		   </widget>
+		  </item>
+		  <item>
+		   <widget class="QPushButton" name="btn_param_retour">
+			<property name="text">
+			 <string>Retour</string>
+			</property>
+		   </widget>
+		  </item>
+
+		  <!-- Spacer -->
+		  <item>
+		   <spacer name="mainMenuSpacer">
+			<property name="orientation">
+			 <enum>Qt::Vertical</enum>
+			</property>
+			<property name="sizeHint" stdset="0">
+			 <size>
+			  <width>20</width>
+			  <height>40</height>
+			 </size>
+			</property>
+		   </spacer>
+		  </item>
+
+		 </layout>
+		</widget>
+     </widget> <!-- Fin du QStackedWidget -->
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
