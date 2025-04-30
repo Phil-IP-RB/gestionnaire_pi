@@ -13,6 +13,6 @@ repository=https://github.com/Phil-IP-RB/gestionnaire_pi
 tags=gestion;pi
 category=Plugins
 hasProcessingProvider=yes
-experimental=True
+experimental=False
 deprecated=False
 server=False
