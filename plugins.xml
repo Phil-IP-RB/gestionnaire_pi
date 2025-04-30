@@ -9,6 +9,6 @@
     <email>xavier.garachon@externe.grdf.fr</email>
     <homepage>https://github.com/Phil-IP-RB/gestionnaire_pi</homepage>
     <repository>https://github.com/Phil-IP-RB/gestionnaire_pi</repository>
-    <experimental>true</experimental>
+    <experimental>false</experimental>
   </pyqgis_plugin>
 </plugins>
