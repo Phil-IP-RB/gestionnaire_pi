@@ -1,6 +1,6 @@
 <?xml version="1.01" encoding="UTF-8"?>
 <plugins>
-  <pyqgis_plugin name="gestionnaire_pi" version="1.01">
+  <pyqgis_plugin name="gestionnaire_pi" version="1.02">
     <description><![CDATA[Gestionnaire P.I : création de lots et génération d’annexes.]]></description>
     <qgis_minimum_version>3.34</qgis_minimum_version>
     <qgis_maximum_version>3.99</qgis_maximum_version>
