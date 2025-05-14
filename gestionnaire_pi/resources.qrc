@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/plugins/gestionnaire_pi">
+		<file>icon.png</file>
+		<file>resources/img/radar_256.svg</file>
+		<file>resources/img/radar_128.svg</file>
+		<file>resources/img/loading_1.gif</file>
+		<file>resources/img/loading_2.gif</file>
+		<file>resources/img/loading_3.gif</file>
+		<file>resources/img/loading_4.gif</file>
+		<file>resources/img/fond-widget.png</file>
+		<file>resources/img/racoon_032.png</file>
+		<file>resources/img/racoon_128.png</file>
+		<file>resources/img/racoon_256.png</file>
+    </qresource>
+</RCC>
