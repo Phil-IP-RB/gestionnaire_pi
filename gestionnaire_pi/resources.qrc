@@ -1,9 +1,0 @@
-<RCC>
-    <qresource prefix="/plugins/gestionnaire_pi">
-		<file>icon.png</file>
-		<file>resources/loading_1.gif</file>
-		<file>resources/loading_2.gif</file>
-		<file>resources/loading_3.gif</file>
-		<file>resources/loading_4.gif</file>
-    </qresource>
-</RCC>
