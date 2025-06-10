@@ -9,6 +9,7 @@
     <email>position.incertaine@gmail.com</email>
     <homepage>https://github.com/Phil-IP-RB/gestionnaire_pi</homepage>
     <repository>https://github.com/Phil-IP-RB/gestionnaire_pi</repository>
+    <changelog>Correction des longueurs folio (partage zone commune) – 10 juin 2025</changelog>
     <experimental>false</experimental>
   </pyqgis_plugin>
 </plugins>
