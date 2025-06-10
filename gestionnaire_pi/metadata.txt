@@ -10,6 +10,7 @@ author=Phil-IP
 email=position.incertaine@gmail.com
 homepage=https://github.com/Phil-IP-RB/gestionnaire_pi
 repository=https://github.com/Phil-IP-RB/gestionnaire_pi
+changelog=Correction des longueurs folio (partage zone commune) – 10 juin 2025
 tags=gestion,pi
 category=Plugins
 hasProcessingProvider=yes
